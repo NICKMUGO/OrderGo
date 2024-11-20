@@ -7,7 +7,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class OrderFactory extends Factory
+class OrdersFactory extends Factory
 {
     protected $model = Orders::class;
 

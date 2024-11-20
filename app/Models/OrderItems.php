@@ -9,6 +9,8 @@ class OrderItems extends Model
 {
     use HasFactory;
 
+    protected $table = 'orderitems';
+
     public function order()
     {
         return $this->belongsTo(Orders::class, 'order_id');

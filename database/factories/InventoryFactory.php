@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\inventory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -14,6 +15,7 @@ class InventoryFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    protected $model = inventory::class;
     public function definition(): array
     {
         return [

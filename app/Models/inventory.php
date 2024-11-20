@@ -9,6 +9,8 @@ class inventory extends Model
 {
     use HasFactory;
 
+    protected $table = 'inventory';
+
     public function orderItems()
     {
         return $this->hasMany(OrderItems::class, 'inventory_id');
